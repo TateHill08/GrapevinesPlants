@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Grapevine TX Plant Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--s:#7A8B6F;--sl:#A8B89E;--sd:#4E5E44;--c:#F5F0E8;--cd:#E8E0D0;--b:#5C4A3A;--t:#C4713B;--w:#FEFCF9;--tx:#3A3530;--tl:#6B6158}
+body{font-family:'DM Sans',sans-serif;background:var(--c);color:var(--tx);line-height:1.6}
+.H{background:linear-gradient(135deg,var(--sd),var(--s) 40%,var(--sl));padding:80px 24px 60px;text-align:center;position:relative;overflow:hidden}
+.H::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23fff' fill-opacity='.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.H h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);color:#fff;position:relative;margin-bottom:12px}
+.H p{font-size:clamp(.95rem,2.5vw,1.1rem);color:rgba(255,255,255,.85);font-weight:300;max-width:640px;margin:0 auto 20px;position:relative}
+.H .bg{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:100px;padding:8px 24px;color:#fff;font-size:.85rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;position:relative}
+.H .ct{display:block;margin-top:14px;color:rgba(255,255,255,.6);font-size:.9rem;position:relative}
+nav{background:var(--w);border-bottom:1px solid var(--cd);padding:0 16px;position:sticky;top:0;z-index:100;display:flex;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.06);flex-wrap:wrap}
+nav a{padding:14px 20px;text-decoration:none;color:var(--tl);font-weight:600;font-size:.88rem;border-bottom:3px solid transparent;transition:.2s;white-space:nowrap}
+nav a:hover,nav a.a{color:var(--sd);border-bottom-color:var(--s)}
+.fb{max-width:1200px;margin:0 auto;padding:24px 24px 0;display:flex;gap:12px;flex-wrap:wrap}
+.fb input{flex:1;min-width:200px;padding:12px 18px;border:2px solid var(--cd);border-radius:8px;font-size:1rem;font-family:inherit;background:var(--w)}
+.fb input:focus{outline:none;border-color:var(--s)}
+.fb select{padding:12px 16px;border:2px solid var(--cd);border-radius:8px;font-family:inherit;background:var(--w);cursor:pointer}
+.S{max-width:1200px;margin:0 auto;padding:56px 24px 36px}
+.Sh{text-align:center;margin-bottom:44px}
+.Sh h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.5rem);color:var(--b);margin-bottom:6px}
+.Sh p{font-size:.88rem;color:var(--tl)}
+.Sd{width:60px;height:3px;background:var(--t);margin:14px auto 0;border-radius:2px}
+.SS{margin-bottom:44px}
+.SS h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--sd);margin-bottom:22px;padding-bottom:8px;border-bottom:2px solid var(--cd)}
+.G{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:20px}
+.C{background:var(--w);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:transform .3s,box-shadow .3s;border:1px solid rgba(0,0,0,.04)}
+.C:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.ci{width:100%;height:210px;object-fit:cover;display:block;background:var(--cd)}
+.cb{padding:14px 16px 16px}
+.cn{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--b);margin-bottom:2px}
+.cs{font-style:italic;font-size:.82rem;color:var(--tl);margin-bottom:8px}
+.cd{font-size:.86rem;line-height:1.5;margin-bottom:10px}
+.ct2{display:flex;flex-wrap:wrap;gap:5px}
+.tg{display:inline-block;padding:2px 9px;border-radius:100px;font-size:.72rem;font-weight:600}
+.ts{background:#FFF3E0;color:#E65100}
+.tsh{background:#E8F5E9;color:#2E7D32}
+.tps{background:#F1F8E9;color:#558B2F}
+.td{background:#FBE9E7;color:#BF360C}
+.tn{background:#E0F2F1;color:#00695C}
+.tp{background:#EDE7F6;color:#4527A0}
+.ta{background:#FFF8E1;color:#F57F17}
+.te{background:#E8EAF6;color:#283593}
+.ph{width:100%;height:210px;background:linear-gradient(135deg,#d4cfc5,#a8b89e);display:flex;align-items:center;justify-content:center;color:#5c5549;font-weight:500;font-size:.85rem;text-align:center;padding:12px}
+.ld{width:100%;height:210px;background:var(--cd);display:flex;align-items:center;justify-content:center}
+.ld::after{content:'Loading photo...';color:var(--tl);font-size:.8rem;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+.ft{background:var(--b);color:rgba(255,255,255,.7);text-align:center;padding:36px 24px;font-size:.88rem}
+.ft strong{color:#fff}
+@media(max-width:600px){nav a{padding:10px 12px;font-size:.8rem}.G{grid-template-columns:1fr}.H{padding:50px 18px 36px}}
+[id]{scroll-margin-top:68px}
+</style>
+</head>
+<body>
+<div class="H">
+<h1>Grapevine, Texas Plant Guide</h1>
+<p>Every flower, shrub, grass, groundcover, vine, and succulent that thrives in our North Texas climate.</p>
+<span class="bg">USDA Zone 8a - Blackland Prairie</span>
+<span class="ct">87 plants cataloged</span>
+</div>
+<nav>
+<a href="#flowers" class="a">Flowers</a>
+<a href="#shrubs">Shrubs</a>
+<a href="#grasses">Grasses</a>
+<a href="#groundcovers">Groundcovers</a>
+<a href="#vines">Vines</a>
+<a href="#ferns">Ferns and More</a>
+</nav>
+<div class="fb">
+<input type="text" id="si" placeholder="Search plants by name..." oninput="F()">
+<select id="tf" onchange="F()">
+<option value="">All Types</option>
+<option value="native">Native</option>
+<option value="perennial">Perennial</option>
+<option value="annual">Annual</option>
+<option value="evergreen">Evergreen</option>
+<option value="drought">Drought Tolerant</option>
+</select>
+</div>
+<div id="app"></div>
+<div class="ft">
+<strong>Grapevine, Texas Plant Guide</strong> - USDA Zone 8a<br>
+<span style="opacity:.55;font-size:.82rem;display:block;margin-top:8px">Photos from iNaturalist.</span>
+</div>
+<script>
+var P=[
+{s:"pf",n:"Black-eyed Susan",sc:"Rudbeckia hirta",q:"Rudbeckia hirta",d:"Bright yellow petals with dark brown-black centers. Blooms summer through fall. Extremely tough in North Texas.",t:"native perennial drought sun"},
+{s:"pf",n:"Purple Coneflower",sc:"Echinacea purpurea",q:"Echinacea purpurea",d:"Iconic purple-pink petals around a spiky bronze cone. Attracts butterflies and bees. Deer resistant.",t:"native perennial drought sun"},
+{s:"pf",n:"Coreopsis (Tickseed)",sc:"Coreopsis lanceolata",q:"Coreopsis lanceolata",d:"Showy daisy-like golden blooms summer through fall. Thrives in poor soils.",t:"native perennial drought sun"},
+{s:"pf",n:"Winecup",sc:"Callirhoe involucrata",q:"Callirhoe involucrata",d:"Low-growing sprawler with vibrant magenta cup-shaped flowers spring through summer.",t:"native perennial sun"},
+{s:"pf",n:"Pink Evening Primrose",sc:"Oenothera speciosa",q:"Oenothera speciosa",d:"Delicate pink blooms blanket roadsides in spring. Classic North Texas wildflower.",t:"native perennial sun"},
+{s:"pf",n:"Mealy Blue Sage",sc:"Salvia farinacea",q:"Salvia farinacea",d:"Spikes of powdery blue-violet flowers spring to frost. Hummingbird and butterfly magnet.",t:"native perennial drought sun"},
+{s:"pf",n:"Blackfoot Daisy",sc:"Melampodium leucanthum",q:"Melampodium leucanthum",d:"Compact mounds of small white daisies with yellow centers. Blooms nearly year-round.",t:"native perennial drought sun"},
+{s:"pf",n:"Gayfeather (Blazing Star)",sc:"Liatris mucronata",q:"Liatris spicata",d:"Tall spikes of fluffy purple flowers bloom top-down in fall. Native prairie plant.",t:"native perennial drought sun"},
+{s:"pf",n:"Maximilian Sunflower",sc:"Helianthus maximiliani",q:"Helianthus maximiliani",d:"Tall stalks covered in bright yellow sunflowers in fall. Can reach 6-10 feet.",t:"native perennial drought sun"},
+{s:"pf",n:"Turks Cap",sc:"Malvaviscus arboreus",q:"Malvaviscus arboreus",d:"Red twisted hibiscus-like flowers all season. Shade to sun. Top hummingbird plant.",t:"native perennial shade"},
+{s:"pf",n:"Cardinal Flower",sc:"Lobelia cardinalis",q:"Lobelia cardinalis",d:"Stunning scarlet-red spikes summer and fall. Needs moist soil. Hummingbird magnet.",t:"native perennial partshade"},
+{s:"pf",n:"Rose Pavonia",sc:"Pavonia lasiopetala",q:"Pavonia lasiopetala",d:"Delicate pink hibiscus-like flowers all summer. Heat loving and deer resistant.",t:"native perennial sun"},
+{s:"pf",n:"Shasta Daisy",sc:"Leucanthemum superbum",q:"Leucanthemum superbum",d:"Classic large white-and-yellow daisies. Blooms spring through summer.",t:"perennial sun"},
+{s:"pf",n:"Daylily",sc:"Hemerocallis spp.",q:"Hemerocallis fulva",d:"Hundreds of colors and forms. Each bloom lasts one day. Incredibly tough.",t:"perennial drought sun"},
+{s:"pf",n:"Bearded Iris",sc:"Iris germanica",q:"Iris germanica",d:"Elegant ruffled blooms in nearly every color. Blooms in spring. Fragrant.",t:"perennial drought sun"},
+{s:"pf",n:"Autumn Sage",sc:"Salvia greggii",q:"Salvia greggii",d:"Compact shrubby perennial with red, pink, coral, or white tubular flowers.",t:"perennial drought sun"},
+{s:"pf",n:"Tropical Sage",sc:"Salvia coccinea",q:"Salvia coccinea",d:"Bright red flowers on easy self-sowing perennial. Blooms until frost.",t:"native perennial partshade"},
+{s:"pf",n:"Greggs Mistflower",sc:"Conoclinium greggii",q:"Conoclinium greggii",d:"Puffy blue-purple flower clusters summer to frost. Best fall monarch plant.",t:"native perennial sun"},
+{s:"pf",n:"Golden Columbine",sc:"Aquilegia chrysantha",q:"Aquilegia chrysantha",d:"Delicate long-spurred yellow flowers. Reseeds easily. Hummingbird magnet.",t:"native perennial partshade"},
+{s:"pf",n:"Coral Bells",sc:"Heuchera spp.",q:"Heuchera sanguinea",d:"Stunning foliage in burgundy, lime, silver, peach. Colorful flower spikes.",t:"perennial shade"},
+{s:"pf",n:"Rose",sc:"Rosa spp.",q:"Rosa chinensis",d:"Knockout, Drift, Iceberg, and heirloom varieties thrive here.",t:"perennial sun"},
+{s:"pf",n:"Lavender",sc:"Lavandula spp.",q:"Lavandula stoechas",d:"Fragrant purple spikes and silver foliage. Spanish lavender handles heat best.",t:"perennial drought sun"},
+{s:"pf",n:"Chrysanthemum",sc:"Chrysanthemum spp.",q:"Chrysanthemum morifolium",d:"Classic fall bloomer in every color. Hardy mums return year after year.",t:"perennial sun"},
+{s:"pf",n:"Hardy Hibiscus",sc:"Hibiscus moscheutos",q:"Hibiscus moscheutos",d:"Dinner-plate-sized blooms in red, pink, white. Returns vigorously each spring.",t:"perennial sun"},
+{s:"pf",n:"Butterfly Milkweed",sc:"Asclepias tuberosa",q:"Asclepias tuberosa",d:"Bright orange flowers. Essential monarch butterfly host plant.",t:"native perennial drought sun"},
+{s:"pf",n:"Spiderwort",sc:"Tradescantia ohiensis",q:"Tradescantia ohiensis",d:"Three-petaled blue-purple flowers in spring. Grass-like foliage.",t:"native perennial partshade"},
+{s:"pf",n:"Missouri Violet",sc:"Viola missouriensis",q:"Viola sororia",d:"Dainty blue-violet flowers in shade. Native groundcover under trees.",t:"native perennial shade"},
+{s:"af",n:"Texas Bluebonnet",sc:"Lupinus texensis",q:"Lupinus texensis",d:"The beloved state flower. Blue-and-white spikes blanket fields in spring.",t:"native annual sun"},
+{s:"af",n:"Indian Paintbrush",sc:"Castilleja indivisa",q:"Castilleja indivisa",d:"Brilliant red-orange bracts like paintbrushes dipped in fire.",t:"native annual sun"},
+{s:"af",n:"Indian Blanket",sc:"Gaillardia pulchella",q:"Gaillardia pulchella",d:"Red and yellow pinwheel blooms spring through summer. Classic wildflower.",t:"native annual sun"},
+{s:"af",n:"Mexican Hat",sc:"Ratibida columnifera",q:"Ratibida columnifera",d:"Drooping red-and-yellow petals around a tall cone. Self-sows freely.",t:"native annual sun"},
+{s:"af",n:"Plains Coreopsis",sc:"Coreopsis tinctoria",q:"Coreopsis tinctoria",d:"Red and yellow bicolor daisies in dense showy masses.",t:"native annual sun"},
+{s:"af",n:"Zinnia",sc:"Zinnia elegans",q:"Zinnia elegans",d:"Vibrant summer blooms in every color. Heat-loving. Top butterfly plant.",t:"annual sun"},
+{s:"af",n:"Marigold",sc:"Tagetes erecta",q:"Tagetes erecta",d:"Gold, orange, yellow blooms all summer. Natural pest deterrent.",t:"annual sun"},
+{s:"af",n:"Cosmos",sc:"Cosmos bipinnatus",q:"Cosmos bipinnatus",d:"Airy daisy-like flowers in pink, white, magenta.",t:"annual sun"},
+{s:"af",n:"Sunflower",sc:"Helianthus annuus",q:"Helianthus annuus",d:"Iconic golden blooms. Dwarf to giant sizes. Feeds birds.",t:"annual sun"},
+{s:"af",n:"Vinca",sc:"Catharanthus roseus",q:"Catharanthus roseus",d:"Thrives in extreme heat. Pink, white, red flowers all summer.",t:"annual drought sun"},
+{s:"af",n:"Pentas",sc:"Pentas lanceolata",q:"Pentas lanceolata",d:"Star-shaped flower clusters. Top butterfly and hummingbird plant.",t:"annual sun"},
+{s:"af",n:"Moss Rose",sc:"Portulaca grandiflora",q:"Portulaca grandiflora",d:"Succulent annual with vibrant rose-like flowers. Loves heat.",t:"annual drought sun"},
+{s:"bu",n:"Daffodil",sc:"Narcissus pseudonarcissus",q:"Narcissus pseudonarcissus",d:"Cheerful yellow spring bloomers. Deer proof.",t:"perennial sun"},
+{s:"bu",n:"Rain Lily",sc:"Zephyranthes spp.",q:"Zephyranthes",d:"Pink or white blooms pop up after summer rains.",t:"native perennial sun"},
+{s:"bu",n:"Spider Lily",sc:"Lycoris radiata",q:"Lycoris radiata",d:"Dramatic red spider-shaped flowers on bare stems in fall.",t:"perennial sun"},
+{s:"sh",n:"Texas Sage",sc:"Leucophyllum frutescens",q:"Leucophyllum frutescens",d:"Silver foliage erupts in purple blooms after rain. Incredibly drought resistant.",t:"native evergreen drought sun"},
+{s:"sh",n:"Flame Acanthus",sc:"Anisacanthus quadrifidus",q:"Anisacanthus quadrifidus",d:"Tubular red-orange flowers nonstop summer through fall.",t:"native perennial drought sun"},
+{s:"sh",n:"Texas Lantana",sc:"Lantana urticoides",q:"Lantana urticoides",d:"Orange-and-yellow flower clusters all summer. Deer resistant.",t:"native perennial drought sun"},
+{s:"sh",n:"Crape Myrtle",sc:"Lagerstroemia indica",q:"Lagerstroemia indica",d:"3-4 months of blooms in red, pink, purple, or white. Beautiful bark.",t:"perennial drought sun"},
+{s:"sh",n:"American Beautyberry",sc:"Callicarpa americana",q:"Callicarpa americana",d:"Iridescent magenta-purple berry clusters in fall. Major bird food.",t:"native perennial partshade"},
+{s:"sh",n:"Chaste Tree",sc:"Vitex agnus-castus",q:"Vitex agnus-castus",d:"Spikes of blue-violet flowers in early summer. 15-20 feet.",t:"perennial drought sun"},
+{s:"sh",n:"Rose of Sharon",sc:"Hibiscus syriacus",q:"Hibiscus syriacus",d:"Large hibiscus-like blooms in pink, purple, white, blue.",t:"perennial sun"},
+{s:"sh",n:"Butterfly Bush",sc:"Buddleja davidii",q:"Buddleja davidii",d:"Long conical flower clusters. Best plant for attracting butterflies.",t:"perennial drought sun"},
+{s:"sh",n:"Yaupon Holly",sc:"Ilex vomitoria",q:"Ilex vomitoria",d:"Most versatile native evergreen. Red berries all winter.",t:"native evergreen drought sun"},
+{s:"sh",n:"Nandina",sc:"Nandina domestica",q:"Nandina domestica",d:"Lacy foliage turns red in winter. Red berries in fall.",t:"evergreen partshade"},
+{s:"sh",n:"Loropetalum",sc:"Loropetalum chinense",q:"Loropetalum chinense",d:"Deep purple foliage with hot pink fringe-like flowers.",t:"evergreen sun"},
+{s:"sh",n:"Texas Mountain Laurel",sc:"Sophora secundiflora",q:"Dermatophyllum secundiflorum",d:"Purple flower clusters smell like grape bubblegum.",t:"native evergreen drought sun"},
+{s:"sh",n:"Oakleaf Hydrangea",sc:"Hydrangea quercifolia",q:"Hydrangea quercifolia",d:"White cone blooms turn pink. Best hydrangea for North Texas.",t:"perennial partshade"},
+{s:"sh",n:"Cherry Laurel",sc:"Prunus caroliniana",q:"Prunus caroliniana",d:"Dense glossy native evergreen. White flowers, berries for birds.",t:"native evergreen sun"},
+{s:"sh",n:"Mahonia",sc:"Mahonia bealei",q:"Mahonia bealei",d:"Bold holly-like foliage with yellow flowers and blue berries.",t:"evergreen shade"},
+{s:"gr",n:"Pink Muhly Grass",sc:"Muhlenbergia capillaris",q:"Muhlenbergia capillaris",d:"Spectacular purplish-pink plumes in fall. Most stunning ornamental grass.",t:"native perennial drought sun"},
+{s:"gr",n:"Little Bluestem",sc:"Schizachyrium scoparium",q:"Schizachyrium scoparium",d:"Blue-green in summer, coppery-russet in fall. THE prairie grass.",t:"native perennial drought sun"},
+{s:"gr",n:"Indiangrass",sc:"Sorghastrum nutans",q:"Sorghastrum nutans",d:"Golden-brown plumes on 3-6 foot stalks.",t:"native perennial drought sun"},
+{s:"gr",n:"Switchgrass",sc:"Panicum virgatum",q:"Panicum virgatum",d:"Tall upright native with airy seed heads.",t:"native perennial drought sun"},
+{s:"gr",n:"Inland Sea Oats",sc:"Chasmanthium latifolium",q:"Chasmanthium latifolium",d:"Graceful arching grass with flat oat-like seed heads. Best for shade.",t:"native perennial shade"},
+{s:"gr",n:"Sideoats Grama",sc:"Bouteloua curtipendula",q:"Bouteloua curtipendula",d:"Texas state grass. Seeds dangle from one side.",t:"native perennial drought sun"},
+{s:"gr",n:"Fountain Grass",sc:"Pennisetum alopecuroides",q:"Pennisetum alopecuroides",d:"Fluffy foxtail-like plumes. Golden fall color.",t:"perennial sun"},
+{s:"gr",n:"Liriope",sc:"Liriope muscari",q:"Liriope muscari",d:"Grassy evergreen with purple bloom spikes. Ubiquitous border plant.",t:"evergreen shade"},
+{s:"gc",n:"Texas Frogfruit",sc:"Phyla nodiflora",q:"Phyla nodiflora",d:"Native lawn alternative with tiny white flowers. Handles foot traffic.",t:"native perennial sun"},
+{s:"gc",n:"Asian Jasmine",sc:"Trachelospermum asiaticum",q:"Trachelospermum asiaticum",d:"Dense dark green evergreen carpet. Most used groundcover in DFW.",t:"evergreen drought sun"},
+{s:"gc",n:"Creeping Phlox",sc:"Phlox subulata",q:"Phlox subulata",d:"Carpet of bright flowers in spring. Evergreen foliage.",t:"perennial sun"},
+{s:"gc",n:"Ajuga",sc:"Ajuga reptans",q:"Ajuga reptans",d:"Blue flower spikes from spreading rosettes. Great shade filler.",t:"perennial shade"},
+{s:"gc",n:"Creeping Thyme",sc:"Thymus serpyllum",q:"Thymus serpyllum",d:"Fragrant tiny-leafed mat with purple flowers.",t:"perennial drought sun"},
+{s:"vi",n:"Crossvine",sc:"Bignonia capreolata",q:"Bignonia capreolata",d:"Orange-red trumpet flowers in spring. Semi-evergreen native.",t:"native perennial sun"},
+{s:"vi",n:"Passionflower",sc:"Passiflora incarnata",q:"Passiflora incarnata",d:"Exotic intricate purple-and-white flowers. Edible fruit.",t:"native perennial sun"},
+{s:"vi",n:"Coral Honeysuckle",sc:"Lonicera sempervirens",q:"Lonicera sempervirens",d:"Red tubular flowers spring through fall. Non-invasive native.",t:"native perennial sun"},
+{s:"vi",n:"Wisteria",sc:"Wisteria sinensis",q:"Wisteria sinensis",d:"Cascading lavender or white clusters. Intoxicating fragrance.",t:"perennial sun"},
+{s:"vi",n:"Carolina Jessamine",sc:"Gelsemium sempervirens",q:"Gelsemium sempervirens",d:"Fragrant golden-yellow flowers late winter/spring. Evergreen.",t:"native evergreen sun"},
+{s:"vi",n:"Trumpet Vine",sc:"Campsis radicans",q:"Campsis radicans",d:"Large orange-red trumpet flowers all summer. Native but aggressive.",t:"native perennial sun"},
+{s:"vi",n:"Star Jasmine",sc:"Trachelospermum jasminoides",q:"Trachelospermum jasminoides",d:"Intensely fragrant white pinwheel flowers. Evergreen.",t:"evergreen sun"},
+{s:"vi",n:"Clematis",sc:"Clematis spp.",q:"Clematis",d:"Hundreds of varieties in every color.",t:"perennial sun"},
+{s:"fm",n:"Autumn Fern",sc:"Dryopteris erythrosora",q:"Dryopteris erythrosora",d:"Copper-red new fronds mature to glossy green. Evergreen.",t:"evergreen shade"},
+{s:"fm",n:"Holly Fern",sc:"Cyrtomium falcatum",q:"Cyrtomium falcatum",d:"Glossy holly-shaped fronds. Evergreen. Extremely tough.",t:"evergreen shade"},
+{s:"fm",n:"Yucca",sc:"Yucca filamentosa",q:"Yucca filamentosa",d:"Sword-like leaves with dramatic white flower spikes.",t:"native evergreen drought sun"},
+{s:"fm",n:"Agave",sc:"Agave americana",q:"Agave americana",d:"Bold succulent rosettes. Instant architectural statement.",t:"evergreen drought sun"},
+{s:"fm",n:"Prickly Pear",sc:"Opuntia engelmannii",q:"Opuntia engelmannii",d:"Flat paddle pads with showy flowers and edible fruit. Unkillable.",t:"native evergreen drought sun"},
+{s:"fm",n:"Red Yucca",sc:"Hesperaloe parviflora",q:"Hesperaloe parviflora",d:"Coral-red tubular flowers on 4-6 foot stalks. Hummingbird magnet.",t:"native evergreen drought sun"},
+{s:"fm",n:"Cast Iron Plant",sc:"Aspidistra elatior",q:"Aspidistra elatior",d:"Broad dark green leaves. Tolerates worst conditions. Unkillable.",t:"evergreen shade"},
+{s:"fm",n:"Lambs Ear",sc:"Stachys byzantina",q:"Stachys byzantina",d:"Soft velvety silver-white leaves. Purple flower spikes.",t:"perennial drought sun"},
+{s:"fm",n:"Hosta",sc:"Hosta spp.",q:"Hosta",d:"Bold textured shade foliage in green, blue, gold.",t:"perennial shade"}
+];
+var TM={native:["Native","tn"],perennial:["Perennial","tp"],annual:["Annual","ta"],evergreen:["Evergreen","te"],drought:["Drought Tolerant","td"],sun:["Full Sun","ts"],shade:["Shade","tsh"],partshade:["Part Shade","tps"]};
+var SM={pf:"Perennial Flowers",af:"Annual Flowers and Wildflowers",bu:"Bulbs and Tubers",sh:"Shrubs and Bushes",gr:"Ornamental Grasses",gc:"Groundcovers",vi:"Vines and Climbers",fm:"Ferns, Succulents and More"};
+var PS=[["flowers","Flowers",["pf","af","bu"]],["shrubs","Shrubs and Bushes",["sh"]],["grasses","Ornamental Grasses",["gr"]],["groundcovers","Groundcovers",["gc"]],["vines","Vines and Climbers",["vi"]],["ferns","Ferns, Succulents and More",["fm"]]];
+function tg(t){return t.split(" ").filter(function(k){return TM[k]}).map(function(k){return '<span class="tg '+TM[k][1]+'">'+TM[k][0]+'</span>'}).join("")}
+var h="";
+PS.forEach(function(sec){
+var id=sec[0],title=sec[1],cats=sec[2];
+var items=P.filter(function(p){return cats.indexOf(p.s)>=0});
+h+='<div class="S" id="'+id+'"><div class="Sh"><h2>'+title+'</h2><p>'+items.length+' plants</p><div class="Sd"></div></div>';
+if(cats.length>1){
+cats.forEach(function(c){
+var ci=items.filter(function(p){return p.s===c});
+if(ci.length) h+='<div class="SS"><h3>'+SM[c]+' ('+ci.length+')</h3><div class="G">'+ci.map(function(p){return '<div class="C" data-tags="'+p.t+'"><div class="ld" id="i'+P.indexOf(p)+'"></div><div class="cb"><div class="cn">'+p.n+'</div><div class="cs">'+p.sc+'</div><div class="cd">'+p.d+'</div><div class="ct2">'+tg(p.t)+'</div></div></div>'}).join("")+'</div></div>';
+});
+} else {
+h+='<div class="G">'+items.map(function(p){return '<div class="C" data-tags="'+p.t+'"><div class="ld" id="i'+P.indexOf(p)+'"></div><div class="cb"><div class="cn">'+p.n+'</div><div class="cs">'+p.sc+'</div><div class="cd">'+p.d+'</div><div class="ct2">'+tg(p.t)+'</div></div></div>'}).join("")+'</div>';
+}
+h+="</div>";
+});
+document.getElementById("app").innerHTML=h;
+function loadImg(idx){
+var p=P[idx];
+var el=document.getElementById("i"+idx);
+if(!el) return;
+fetch("https://api.inaturalist.org/v1/taxa/autocomplete?q="+encodeURIComponent(p.q)+"&per_page=1")
+.then(function(r){return r.json()})
+.then(function(d){
+if(d.results && d.results.length>0){
+var taxon=d.results[0];
+var photoUrl=(taxon.default_photo && taxon.default_photo.medium_url) || (taxon.default_photo && taxon.default_photo.url);
+if(photoUrl){
+var largeUrl=photoUrl.replace("/medium.","/large.").replace("/square.","/large.");
+var img=new Image();
+img.className="ci";
+img.alt=p.n;
+img.onload=function(){el.parentNode.replaceChild(img,el)};
+img.onerror=function(){
+var img2=new Image();
+img2.className="ci";
+img2.alt=p.n;
+img2.onload=function(){el.parentNode.replaceChild(img2,el)};
+img2.onerror=function(){el.className="ph";el.textContent=p.n};
+img2.src=photoUrl;
+};
+img.src=largeUrl;
+return;
+}
+}
+el.className="ph";el.textContent=p.n;
+})
+.catch(function(){el.className="ph";el.textContent=p.n});
+}
+var loadIndex=0;
+function loadNext(){
+if(loadIndex>=P.length) return;
+loadImg(loadIndex);
+loadIndex++;
+if(loadIndex>=P.length) return;
+loadImg(loadIndex);
+loadIndex++;
+setTimeout(loadNext,600);
+}
+loadNext();
+document.querySelectorAll("nav a").forEach(function(l){
+l.addEventListener("click",function(e){
+e.preventDefault();
+var target=document.querySelector(l.getAttribute("href"));
+if(target) target.scrollIntoView({behavior:"smooth"});
+document.querySelectorAll("nav a").forEach(function(a){a.classList.remove("a")});
+l.classList.add("a");
+});
+});
+var ss=document.querySelectorAll(".S[id]");
+var nn=document.querySelectorAll("nav a");
+window.addEventListener("scroll",function(){
+var c="";
+ss.forEach(function(s){if(window.scrollY>=s.offsetTop-100) c=s.id});
+nn.forEach(function(n){
+if(n.getAttribute("href")==="#"+c) n.classList.add("a");
+else n.classList.remove("a");
+});
+});
+function F(){
+var q=document.getElementById("si").value.toLowerCase();
+var t=document.getElementById("tf").value;
+document.querySelectorAll(".C").forEach(function(c){
+var n=c.querySelector(".cn").textContent.toLowerCase();
+var s=c.querySelector(".cs").textContent.toLowerCase();
+var d=c.querySelector(".cd").textContent.toLowerCase();
+var tags=c.dataset.tags||"";
+var show=(!q||n.indexOf(q)>=0||s.indexOf(q)>=0||d.indexOf(q)>=0)&&(!t||tags.indexOf(t)>=0);
+c.style.display=show?"":"none";
+});
+}
+</script>
+</body>
+</html>
